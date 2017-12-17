@@ -71,30 +71,33 @@ hr{
 }
 
 .container{
+	height: 60vh;
+	width: 60vw;
+    min-height: 0;
+    min-width: 0;
+	border-radius: 5%;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: nowrap;
-	align-content: center;
-	flex-direction: row;
-	justify-content: space-around;
-	min-height: 50vh;
-}
 
+}
 .progress{
-	opacity: 0.95;
-	flex-basis: 0;
 	flex-grow: 3;
-	background-color:#343131;
-    flex-shrink: 0;
-}
-
-.events{
 	opacity: 0.95;
-	flex-basis:0;
-	height: 30vh;
+	background-color:#343131;
+    max-width: 38vw;
+    max-height: 55vh;
+   
+    color: white;
+}
+.card{
 	flex-grow: 2;
+	opacity: 0.95;
+	background-color:#343131;
+	color: white;
+	max-height: 55vh;
 	margin-left: 1%;
-	flex-shrink: 0;
-	background-color: #343131;
+	overflow: hidden;
 }
 .header{
 	background-color: #343131;
@@ -104,19 +107,107 @@ hr{
 	align-content: center;
 	flex-direction: column;
 	display: flex;
+	border-radius: 3%;
 }
 #text{
+	color: black;
 	font-size: 1.3em;
-	background-color: #6bb4fe;
+	background-color: #3498db;
 	font-family: 'Zilla Slab',serif;
+    border-radius: 3%;	
 }
-.details {
-	margin: 2vh;
-	display: flex;
-	background-color: #E0E0E0;
-	opacity: 0.8;
-	max-height: 20vh;
-	flex-wrap: wrap;
-	padding: 1%;
+.mod {
+    display: none; 
+    position: fixed; 
+    padding-top: 7%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+     background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5;
+}
+.content {
+    background-color: #343131;
+    margin: auto;
+    padding: 2%;
+    border-radius: 1%;
+    width: 80%;
+    height: 70%;
+    overflow: auto;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container1 {
+  width: 100%;
+  background-color: white;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 1em;
+  line-height: 2em;
+  color: white;
+}
+
+#code {
+	width: 90%; 
+	background-color: #3498db;
+}
+#web {
+	width: 80%;
+	background-color: #3498db;
+}
+#app {
+	width: 10%; 
+	background-color: #3498db;
+}
+#design {
+	width: 60%; 
+	background-color: #3498db;
+}
+#hash {
+	width: 30%;
+	background-color: #3498db;
+}
+#hold{
+	 width: calc(100% - 1em);
+  height: calc(100% - 5em);
+	background-color: #343131;
+}
+.subhead{
+	background-color: #343131;
+	margin: 1%;
 	font-family: 'Zilla Slab',serif;
+	font-size: 1.2em;
+	text-align: center;
+	color: white
+}
+#rewardshead{
+	margin-top: 0;
+	color: white;
+	font-family: 'Zilla Slab',serif;
+	font-size: 2em;
+	text-align: center;
+	border-bottom: 1px solid #ffffff;
+}
+canvas{
+    margin: 3%;
+    background-color: #343131;
+
 }
