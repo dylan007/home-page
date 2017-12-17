@@ -165,8 +165,11 @@ exit.onclick = function() {
     certModal.style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == certModal) {
+    if (event.target == certModal ) {
         certModal.style.display = "none";
+    }
+    else if(event.target == eventsModal){
+    	eventsModal.style.display = "none";
     }
 }
 
@@ -176,18 +179,12 @@ var connect = document.getElementById('viewEvents');
 var closed = document.getElementsByClassName("close")[1];
 
 connect.onclick = function(){
-	eventsModal.style.display ="block";
+	eventsModal.style.display = "block";
 }
 closed.onclick = function(){
-	eventsModal.style.display="none";
+	eventsModal.style.display= "none";
 
 }
-window.onclick = function(event){
-	if(event.target == eventsModal){
-		eventsModal.style.display ="none";
-	}
-}
-
 
 
 
