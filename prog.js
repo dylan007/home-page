@@ -1,5 +1,5 @@
 window.onload = function(){
-	//fixed number of events to be attended to get a certificate-domain wise
+//fixed number of events to be attended to get a certificate-domain wise
 const codeCert =10;
 const webCert =10;
 const appCert =10;
@@ -153,20 +153,42 @@ var hashChart = new Chart(ctx4, {
       }
    }
 });
-var modal = document.getElementById('Mod');
+//modal for certificates 
+var certModal = document.getElementById('Mod');
 var link = document.getElementById("myBtn");
 var exit = document.getElementsByClassName("close")[0];
 link.onclick = function() {
-    modal.style.display = "block";
+    certModal.style.display = "block";
 }
 
 exit.onclick = function() {
-    modal.style.display = "none";
+    certModal.style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == certModal) {
+        certModal.style.display = "none";
     }
 }
+
+//modal for events 
+var eventsModal = document.getElementById('eventMod');
+var connect = document.getElementById('viewEvents');
+var closed = document.getElementsByClassName("close")[1];
+
+connect.onclick = function(){
+	eventsModal.style.display ="block";
+}
+closed.onclick = function(){
+	eventsModal.style.display="none";
+
+}
+window.onclick = function(event){
+	if(event.target == eventsModal){
+		eventsModal.style.display ="none";
+	}
+}
+
+
+
 
 }
