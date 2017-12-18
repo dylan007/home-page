@@ -17,7 +17,7 @@
             <img src="https://iecsemanipal.com/images/logos/iecse-logo-black.png" alt="Logo" width="200">
          </div>
          <div class="link"><img src="./assets/icon.png"><a href="#">Dashboard</a></div>
-         <div class="link"><img src="./assets/icon.png"><a href="#">Events</a></div>
+         <div class="link" id="viewEvents"><img src="./assets/icon.png"><a href="#">Events</a></div>
          <div class="link" id="myBtn"><img src="./assets/icon.png"><a href="#">Certificates</a></div>
       </div>
       <div class="main">
@@ -49,6 +49,18 @@
                      <div class="skills" id="hash">3</div>
                   </div>
                </div>
+               <!--hold ends here -->
+            </div>
+            <!-- content ends here -->
+         </div>
+         <!-- Certificate modal ends here-->
+         <!-- Events  modal begins here-->
+         <div class="mod" id="eventMod">
+            <div class="content">
+               <span class ="close">&times;</span>
+               <div class="header">
+                  <h3 id="rewardshead">Upcoming Events</h3>
+               </div>
             </div>
          </div>
          <div class="slider container">
@@ -59,9 +71,7 @@
                         <p id="text">Code Progress: comprate%</p>
                      </b>
                   </div>
-                  <div>
-                     <canvas id="codeChart"></canvas>
-                  </div>
+                  <canvas id="codeChart"></canvas>
                </div>
                <div class="graph">
                   <div class="header">
@@ -114,3 +124,4 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
       <script type="text/javascript" src="prog.js"></script>    
    </body>
+</html>

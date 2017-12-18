@@ -1,28 +1,28 @@
-window.onload = function () {
-  //fixed number of events to be attended to get a certificate-domain wise
-  const codeCert = 10;
-  const webCert = 10;
-  const appCert = 10;
-  const designCert = 10;
-  const hashCert = 10;
-  //total number of decided events for each domain
-  const codeTotal = 15;
-  const webTotal = 15;
-  const appTotal = 15;
-  const designTotal = 15;
-  const hashTotal = 15;
-  //Events attended till now (current)-domain wise 
-  var codeCurr;
-  var webCurr;
-  var appCurr;
-  var designCurr;
-  var hashCurr;
-  /* 
-  To calulate cuurent completion rate for certificate 
-  eg : 
-  (codeCurr/codeCert)*100 = completion rate, to update css of progress bar 
-  value displayed in progress bar = codeCurr (NOT COMPLETION RATE)
 
+window.onload = function(){
+//fixed number of events to be attended to get a certificate-domain wise
+const codeCert =10;
+const webCert =10;
+const appCert =10;
+const designCert =10;
+const hashCert =10;
+//total number of decided events for each domain
+const codeTotal =15;
+const webTotal =15;
+const appTotal =15;
+const designTotal =15;
+const hashTotal =15;
+//Events attended till now (current)-domain wise 
+var codeCurr;
+var webCurr;
+var appCurr;
+var designCurr;
+var hashCurr;
+/* 
+To calulate cuurent completion rate for certificate 
+eg : 
+(codeCurr/codeCert)*100 = completion rate, to update css of progress bar 
+value displayed in progress bar = codeCurr (NOT COMPLETION RATE)
   //completion rates per domian 
   var codeCompRate = (codeCurr/codeCert)*100;
   var webCompRate;= (webCurr/webCert)*100;
@@ -151,22 +151,38 @@ window.onload = function () {
         },
         display: false
       }
-    }
-  });
-  var modal = document.getElementById('Mod');
-  var link = document.getElementById("myBtn");
-  var exit = document.getElementsByClassName("close")[0];
-  link.onclick = function () {
-    modal.style.display = "block";
-  }
+   }
+});
+//modal for certificates 
+var certModal = document.getElementById('Mod');
+var link = document.getElementById("myBtn");
+var exit = document.getElementsByClassName("close")[0];
+link.onclick = function() {
+    certModal.style.display = "block";
+}
 
-  exit.onclick = function () {
-    modal.style.display = "none";
-  }
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+exit.onclick = function() {
+    certModal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == certModal ) {
+        certModal.style.display = "none";
     }
-  }
+    else if(event.target == eventsModal){
+    	eventsModal.style.display = "none";
+    }
+}
 
+//modal for events 
+var eventsModal = document.getElementById('eventMod');
+var connect = document.getElementById('viewEvents');
+var closed = document.getElementsByClassName("close")[1];
+
+connect.onclick = function(){
+	eventsModal.style.display = "block";
+}
+closed.onclick = function(){
+	eventsModal.style.display= "none";
+
+}
 }
