@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $('.progress').slick({
   	arrows: false,

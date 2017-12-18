@@ -1,15 +1,19 @@
-body{
+html,
+body 
+{
 	margin: 0;
-	padding:0;
+	padding: 0;
 	background-color: #FCFCFC;
 }
-.sidebar{
-	height : 100%;
-	width : 20%;
+
+.sidebar 
+{
+	height: 100%;
+	width: 20%;
 	position: fixed;
-	z-index : 1;
-	top : 0;
-	left : 0;
+	z-index: 1;
+	top: 0;
+	left: 0;
 	background-color: #343131;
 	overflow-x: hidden;
 	padding-left: 2.5%;
@@ -17,89 +21,95 @@ body{
 	flex-direction: column;
 }
 
-.sidebar a{
+.sidebar a {
 	text-decoration: none;
-	font-size : 25px;
+	font-size: 25px;
 	color: #b3e5fc;
 	display: block;
-	font-family: 'Zilla Slab',serif;
+	font-family: 'Zilla Slab', serif;
 }
 
-.logo{
+.logo {
 	background-color: #64B7DC;
 	height: 22.5%;
 	margin-left: -12.5%;
 	margin-bottom: 10%;
 }
 
-.logo img{
+.logo img {
 	padding-left: 12.5%;
 	padding-top: 12.5%;
 }
 
-.main{
+.main {
 	margin-left: 30%;
 	margin-top: 4%;
-	font-family: 'Zilla Slab',serif;
+	font-family: 'Zilla Slab', serif;
 	background-color: #FCFCFC;
 	min-height: 100vh;
 	margin-right: 5%;
 }
 
-.link{
+.link {
 	margin-left: -12.5%;
 	transition: all 0.5s ease-in-out;
 	padding-bottom: 4%;
 	padding-top: 4%;
 }
 
-.link a{
+.link a {
 	margin-left: 12.5%;
 }
 
-.link:hover{
-	background-color:  #706E6E;
+.link img
+{
+	display: none;
 }
 
-hr{
+.link:hover {
+	background-color: #706E6E;
+}
+
+hr {
 	height: 10px;
 	border: 0;
 	margin-left: -2.5%;
 	margin-top: 4%;
-	background-image: linear-gradient(to right,#AFF4F5,#2a7faa);
+	background-image: linear-gradient(to right, #AFF4F5, #2a7faa);
 	margin-bottom: 5%;
 }
 
-.container{
+.container {
 	height: 60vh;
 	width: 60vw;
-    min-height: 0;
-    min-width: 0;
+	min-height: 0;
+	min-width: 0;
 	border-radius: 5%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
-
 }
-.progress{
+
+.progress {
 	flex-grow: 3;
 	opacity: 0.95;
-	background-color:#343131;
-    max-width: 38vw;
-    max-height: 55vh;
-   
-    color: white;
+	background-color: #343131;
+	max-width: 38vw;
+	max-height: 55vh;
+	color: white;
 }
-.card{
+
+.card {
 	flex-grow: 2;
 	opacity: 0.95;
-	background-color:#343131;
+	background-color: #343131;
 	color: white;
 	max-height: 55vh;
 	margin-left: 1%;
 	overflow: hidden;
 }
-.header{
+
+.header {
 	background-color: #343131;
 	height: 5vh;
 	text-align: center;
@@ -109,105 +119,115 @@ hr{
 	display: flex;
 	border-radius: 3%;
 }
-#text{
+
+#text {
 	color: black;
 	font-size: 1.3em;
 	background-color: #3498db;
-	font-family: 'Zilla Slab',serif;
-    border-radius: 3%;	
+	font-family: 'Zilla Slab', serif;
+	border-radius: 3%;
 }
+
 .mod {
-    display: none; 
-    position: fixed; 
-    padding-top: 7%; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.7);
-    z-index: 5;
+	display: none;
+	position: fixed;
+	padding-top: 7%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 5;
 }
+
 .content {
-    background-color: #343131;
-    margin: auto;
-    padding: 2%;
-    border-radius: 1%;
-    width: 80%;
-    height: 70%;
-    overflow: auto;
+	background-color: #343131;
+	margin: auto;
+	padding: 2%;
+	border-radius: 1%;
+	width: 80%;
+	height: 70%;
+	overflow: auto;
 }
 
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .container1 {
-  width: 100%;
-  background-color: white;
+	width: 100%;
+	background-color: white;
 }
 
 .skills {
-  text-align: right;
-  padding-right: 1em;
-  line-height: 2em;
-  color: white;
+	text-align: right;
+	padding-right: 1em;
+	line-height: 2em;
+	color: white;
 }
 
 #code {
-	width: 90%; 
+	width: 90%;
 	background-color: #3498db;
 }
+
 #web {
 	width: 80%;
 	background-color: #3498db;
 }
+
 #app {
-	width: 10%; 
+	width: 10%;
 	background-color: #3498db;
 }
+
 #design {
-	width: 60%; 
+	width: 60%;
 	background-color: #3498db;
 }
+
 #hash {
 	width: 30%;
 	background-color: #3498db;
 }
-#hold{
-	 width: calc(100% - 1em);
-  height: calc(100% - 5em);
+
+#hold {
+	width: calc(100% - 1em);
+	height: calc(100% - 5em);
 	background-color: #343131;
 }
-.subhead{
+
+.subhead {
 	background-color: #343131;
 	margin: 1%;
-	font-family: 'Zilla Slab',serif;
+	font-family: 'Zilla Slab', serif;
 	font-size: 1.2em;
 	text-align: center;
 	color: white
 }
-#rewardshead{
+
+#rewardshead {
 	margin-top: 0;
 	color: white;
-	font-family: 'Zilla Slab',serif;
+	font-family: 'Zilla Slab', serif;
 	font-size: 2em;
 	text-align: center;
 	border-bottom: 1px solid #ffffff;
 }
-canvas{
-    margin: 3%;
-    background-color: #343131;
 
+canvas {
+	margin: 3%;
+	background-color: #343131;
 }
